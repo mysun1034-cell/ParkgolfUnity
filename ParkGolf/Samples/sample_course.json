@@ -1,0 +1,32 @@
+{
+  "name": "샘플 파크골프 9홀",
+  "holes": [
+    { "holeNumber": 1, "par": 3, "distanceMeters": 45, "fairwayWidth": 4, "hazard": "None",
+      "centerlinePoints": [ {"x":0,"y":0,"z":0}, {"x":2,"y":0,"z":22}, {"x":0,"y":0,"z":45} ],
+      "tee": {"x":0,"y":0,"z":0}, "cup": {"x":0,"y":0,"z":45} },
+    { "holeNumber": 2, "par": 3, "distanceMeters": 50, "fairwayWidth": 4, "hazard": "Sand",
+      "centerlinePoints": [ {"x":20,"y":0,"z":0}, {"x":20,"y":0,"z":25}, {"x":20,"y":0,"z":50} ],
+      "tee": {"x":20,"y":0,"z":0}, "cup": {"x":20,"y":0,"z":50} },
+    { "holeNumber": 3, "par": 3, "distanceMeters": 55, "fairwayWidth": 4, "hazard": "None",
+      "centerlinePoints": [ {"x":40,"y":0,"z":0}, {"x":43,"y":0,"z":28}, {"x":40,"y":0,"z":55} ],
+      "tee": {"x":40,"y":0,"z":0}, "cup": {"x":40,"y":0,"z":55} },
+    { "holeNumber": 4, "par": 3, "distanceMeters": 58, "fairwayWidth": 4, "hazard": "None",
+      "centerlinePoints": [ {"x":60,"y":0,"z":0}, {"x":60,"y":0,"z":29}, {"x":60,"y":0,"z":58} ],
+      "tee": {"x":60,"y":0,"z":0}, "cup": {"x":60,"y":0,"z":58} },
+    { "holeNumber": 5, "par": 4, "distanceMeters": 80, "fairwayWidth": 5, "hazard": "Water",
+      "centerlinePoints": [ {"x":80,"y":0,"z":0}, {"x":85,"y":0,"z":40}, {"x":80,"y":0,"z":80} ],
+      "tee": {"x":80,"y":0,"z":0}, "cup": {"x":80,"y":0,"z":80} },
+    { "holeNumber": 6, "par": 4, "distanceMeters": 90, "fairwayWidth": 5, "hazard": "None",
+      "centerlinePoints": [ {"x":105,"y":0,"z":0}, {"x":110,"y":0,"z":45}, {"x":105,"y":0,"z":90} ],
+      "tee": {"x":105,"y":0,"z":0}, "cup": {"x":105,"y":0,"z":90} },
+    { "holeNumber": 7, "par": 4, "distanceMeters": 95, "fairwayWidth": 5, "hazard": "Sand",
+      "centerlinePoints": [ {"x":130,"y":0,"z":0}, {"x":135,"y":0,"z":48}, {"x":130,"y":0,"z":95} ],
+      "tee": {"x":130,"y":0,"z":0}, "cup": {"x":130,"y":0,"z":95} },
+    { "holeNumber": 8, "par": 4, "distanceMeters": 100, "fairwayWidth": 5, "hazard": "None",
+      "centerlinePoints": [ {"x":155,"y":0,"z":0}, {"x":160,"y":0,"z":50}, {"x":155,"y":0,"z":100} ],
+      "tee": {"x":155,"y":0,"z":0}, "cup": {"x":155,"y":0,"z":100} },
+    { "holeNumber": 9, "par": 5, "distanceMeters": 140, "fairwayWidth": 6, "hazard": "Water",
+      "centerlinePoints": [ {"x":180,"y":0,"z":0}, {"x":188,"y":0,"z":70}, {"x":180,"y":0,"z":140} ],
+      "tee": {"x":180,"y":0,"z":0}, "cup": {"x":180,"y":0,"z":140} }
+  ]
+}
