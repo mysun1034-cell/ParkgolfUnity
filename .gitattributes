@@ -1,0 +1,59 @@
+# ===== 줄바꿈 정규화 =====
+* text=auto
+
+# 코드 / 텍스트
+*.cs        text diff=csharp
+*.shader    text
+*.cginc     text
+*.hlsl      text
+*.compute   text
+*.json      text
+*.md        text
+*.txt       text
+*.xml       text
+*.asmdef    text
+*.asmref    text
+*.uxml      text
+*.uss       text
+
+# ===== Unity YAML (텍스트 유지 — 머지 가능, LFS 금지) =====
+# .meta/.unity/.prefab/.asset/.anim/.controller/.mat 등은 Unity 직렬화 YAML이라 텍스트.
+# merge=unityyamlmerge 는 Unity 설치 후 UnityYAMLMerge 드라이버를 git에 등록해야 동작한다
+#   (미등록 시 기본 3-way 머지로 폴백 — 무해). 등록: git config merge.unityyamlmerge.* (Unity 매뉴얼).
+*.meta            text merge=unityyamlmerge eol=lf
+*.unity           text merge=unityyamlmerge eol=lf
+*.prefab          text merge=unityyamlmerge eol=lf
+*.asset           text merge=unityyamlmerge eol=lf
+*.mat             text merge=unityyamlmerge eol=lf
+*.anim            text merge=unityyamlmerge eol=lf
+*.controller      text merge=unityyamlmerge eol=lf
+*.overrideController text merge=unityyamlmerge eol=lf
+*.physicMaterial  text merge=unityyamlmerge eol=lf
+*.physicsMaterial2D text merge=unityyamlmerge eol=lf
+
+# ===== 바이너리 에셋 → Git LFS =====
+# 대용량 바이너리만. (.anim 은 위에서 텍스트로 처리하므로 여기 없음 — 의도된 구분.)
+*.fbx           filter=lfs diff=lfs merge=lfs -text
+*.obj           filter=lfs diff=lfs merge=lfs -text
+*.blend         filter=lfs diff=lfs merge=lfs -text
+*.dae           filter=lfs diff=lfs merge=lfs -text
+*.3ds           filter=lfs diff=lfs merge=lfs -text
+*.png           filter=lfs diff=lfs merge=lfs -text
+*.jpg           filter=lfs diff=lfs merge=lfs -text
+*.jpeg          filter=lfs diff=lfs merge=lfs -text
+*.gif           filter=lfs diff=lfs merge=lfs -text
+*.tga           filter=lfs diff=lfs merge=lfs -text
+*.tif           filter=lfs diff=lfs merge=lfs -text
+*.tiff          filter=lfs diff=lfs merge=lfs -text
+*.psd           filter=lfs diff=lfs merge=lfs -text
+*.exr           filter=lfs diff=lfs merge=lfs -text
+*.hdr           filter=lfs diff=lfs merge=lfs -text
+*.bmp           filter=lfs diff=lfs merge=lfs -text
+*.wav           filter=lfs diff=lfs merge=lfs -text
+*.mp3           filter=lfs diff=lfs merge=lfs -text
+*.ogg           filter=lfs diff=lfs merge=lfs -text
+*.aif           filter=lfs diff=lfs merge=lfs -text
+*.aiff          filter=lfs diff=lfs merge=lfs -text
+*.ttf           filter=lfs diff=lfs merge=lfs -text
+*.otf           filter=lfs diff=lfs merge=lfs -text
+*.unitypackage  filter=lfs diff=lfs merge=lfs -text
